@@ -51,3 +51,18 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
+
+// News Text Truncate
+let maxCharac = 110;
+let contents = document.querySelectorAll(".content");
+
+contents.forEach(content => {
+  if(content.textContent.length < maxCharac) {
+    content.nextElementSibling.style.display = "none";
+  }
+  else {
+    let displayText = content.textContent.slice(0, maxCharac);
+    let moreText = content.textContent.slice(maxCharac);
+    content.innerHTML = `${displayText}<span class = "dots">...</span><span class = "hide more">${moreText}</span> `;
+  }
+})
