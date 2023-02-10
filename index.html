@@ -8,6 +8,9 @@
         4D Dual Tvet Azerbaijan | Home
     </title>
     <!-- CSS only -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
     <link rel="stylesheet" href="/assets/style.css" />
@@ -16,6 +19,11 @@
     <!-- swiperJS  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <!-- swiperJS  -->
+
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -142,21 +150,63 @@
         <div style="margin-top: 120px;" class="container">
             <div class="row">
                 <div class="left-column">
-                    <div onclick="window.location.href='newsdetail.aspx?id=11&text=AHK Azərbaycan tərəfindən Azərbaycanda 4D-Dual TKT Layihəmiz &#252;&#231;&#252;n uğurlu seminar';"
-                        class="card">
-                        <img src="assets/img/Carousel/xeber-2.JPG" alt="blog " />
-                        <p style="font-size:18px">Sunt Sunt in culpa qui mollit Sunt in culpa qui mollitSunt in culpa
-                            qui mollitSunt in culpa qui mollit in culpa qui mollit anim id est laborum consectetur
-                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                            ad minim veniam, quis nostrud exercitation ullamco.</p>
+                    <div class="card">
+                        <div style="margin:0px;" id="carouselExampleIndicators" class="carousel slide"
+                            data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div onclick="window.location.href='newsdetail.aspx?id=11&text=AHK Azərbaycan tərəfindən Azərbaycanda 4D-Dual TKT Layihəmiz &#252;&#231;&#252;n uğurlu seminar';" class="carousel-item active">
+                                    <img src="assets/img/Carousel/xeber-1.JPG" alt="First slide">
+                                    <br><br>
+                                    <p>Dekabr 1, 2022</p>
+                                    <h3 id="maxContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                                        necessitatibus
+                                        dolor blanditiis quod. Voluptatibus, voluptatum.</h3>
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+
+                                </div>
+                                <div onclick="window.location.href='newsdetail.aspx?id=11&text=AHK Azərbaycan tərəfindən Azərbaycanda 4D-Dual TKT Layihəmiz &#252;&#231;&#252;n uğurlu seminar';" class="carousel-item">
+                                    <img src="assets/img/Carousel/xeber-2.JPG" alt="First slide">
+                                    <br><br>
+                                    <p>Dekabr 2, 2022</p>
+                                    <h3 id="maxContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                                        necessitatibus
+                                        dolor blanditiis quod. Voluptatibus, voluptatum.</h3>
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+
+                                </div>
+                                <div onclick="window.location.href='newsdetail.aspx?id=11&text=AHK Azərbaycan tərəfindən Azərbaycanda 4D-Dual TKT Layihəmiz &#252;&#231;&#252;n uğurlu seminar';" class="carousel-item">
+                                    <img src="assets/img/Carousel/xeber-1.JPG" alt="First slide">
+                                    <br><br>
+                                    <p>Dekabr 3, 2022</p>
+                                    <h3 id="maxContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                                        necessitatibus
+                                        dolor blanditiis quod. Voluptatibus, voluptatum.</h3>
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="right-column">
                     <div onclick="window.location.href='newsdetail.aspx?id=11&text=AHK Azərbaycan tərəfindən Azərbaycanda 4D-Dual TKT Layihəmiz &#252;&#231;&#252;n uğurlu seminar';"
                         class="card">
-                        <h3>Xəbərlər</h3>
-                        <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, rerum odio!
+                        <div class="card-head">
+                            <h5>Xəbərlər</h5><br><br>
+                            <h6>Dekabr 6, 2022</h6>
+                        </div>
+                        <p id="maxContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, rerum odio!
                             Culpa deserunt itaque laudantium totam hic sequi dolores cupiditate eum animi reiciendis
                             quaerat asperiores aut, commodi rerum adipisci vero perferendis explicabo sapiente
                             excepturi! Possimus ea provident eligendi asperiores rerum, dolores vero reiciendis
@@ -165,37 +215,51 @@
                             molestias ratione reiciendis ab sunt, velit quo, neque pariatur tempore nesciunt voluptatum
                             consequuntur minus qui laudantium architecto dolores corporis. Nostrum.</p>
                     </div>
+
                     <div onclick="window.location.href='newsdetail.aspx?id=11&text=AHK Azərbaycan tərəfindən Azərbaycanda 4D-Dual TKT Layihəmiz &#252;&#231;&#252;n uğurlu seminar';"
                         class="card">
-                        <h3>Xəbərlər</h3>
-                        <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, rerum odio!
+                        <div class="card-head">
+                            <h5>Xəbərlər</h5>
+                            <h6>Dekabr 6, 2022</h6>
+                        </div>
+                        <p id="maxContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, rerum odio!
                             Culpa deserunt itaque laudantium totam hic sequi dolores cupiditate eum animi reiciendis
                             quaerat asperiores aut, commodi rerum adipisci vero perferendis explicabo sapiente
                             excepturi! Possimus ea provident eligendi asperiores rerum, dolores vero reiciendis
                             praesentium voluptatem ullam iusto expedita neque similique esse numquam animi impedit
                             tempore voluptate fuga cumque molestias. Blanditiis, officiis? Natus eius eligendi,
-                            molestias ratione reiciendis ab sunt, velit quo, neque pariatur tempore nesciunt voluptatum
+                            molestias ratione reiciendis ab sunt, velit quo, neque pariatur tempore nesciunt
+                            voluptatum
                             consequuntur minus qui laudantium architecto dolores corporis. Nostrum.</p>
                     </div>
+
                     <div onclick="window.location.href='newsdetail.aspx?id=11&text=AHK Azərbaycan tərəfindən Azərbaycanda 4D-Dual TKT Layihəmiz &#252;&#231;&#252;n uğurlu seminar';"
                         class="card">
-                        <h3>Xəbərlər</h3>
-                        <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, rerum odio!
+                        <div class="card-head">
+                            <h5>Xəbərlər</h5>
+                            <h6>Dekabr 6, 2022</h6>
+                        </div>
+                        <p id="maxContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, rerum odio!
                             Culpa deserunt itaque laudantium totam hic sequi dolores cupiditate eum animi reiciendis
                             quaerat asperiores aut, commodi rerum adipisci vero perferendis explicabo sapiente
                             excepturi! Possimus ea provident eligendi asperiores rerum, dolores vero reiciendis
                             praesentium voluptatem ullam iusto expedita neque similique esse numquam animi impedit
                             tempore voluptate fuga cumque molestias. Blanditiis, officiis? Natus eius eligendi,
-                            molestias ratione reiciendis ab sunt, velit quo, neque pariatur tempore nesciunt voluptatum
+                            molestias ratione reiciendis ab sunt, velit quo, neque pariatur tempore nesciunt
+                            voluptatum
                             consequuntur minus qui laudantium architecto dolores corporis. Nostrum.</p>
                     </div>
+
                     <div onclick="window.location.href='newsdetail.aspx?id=11&text=AHK Azərbaycan tərəfindən Azərbaycanda 4D-Dual TKT Layihəmiz &#252;&#231;&#252;n uğurlu seminar';"
                         class="card">
-                        <h3>Xəbərlər</h3>
-                        <p class="content">Lorem ipsum ds sfsf sfsf olor sit amet consectetur adipisicing elit. Ea,
-                            rerum odio! Culpa deserunt itaque laudantium totam hic sequi dolores cupiditate eum animi
-                            reiciendis quaerat asperiores aut, commodi rerum adipisci vero perferendis explicabo
-                            sapiente excepturi! Possimus ea provident eligendi asperiores rerum, dolores vero reiciendis
+                        <div class="card-head">
+                            <h5>Xəbərlər</h5>
+                            <h6>Dekabr 6, 2022</h6>
+                        </div>
+                        <p id="maxContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, rerum odio!
+                            Culpa deserunt itaque laudantium totam hic sequi dolores cupiditate eum animi reiciendis
+                            quaerat asperiores aut, commodi rerum adipisci vero perferendis explicabo sapiente
+                            excepturi! Possimus ea provident eligendi asperiores rerum, dolores vero reiciendis
                             praesentium voluptatem ullam iusto expedita neque similique esse numquam animi impedit
                             tempore voluptate fuga cumque molestias. Blanditiis, officiis? Natus eius eligendi,
                             molestias ratione reiciendis ab sunt, velit quo, neque pariatur tempore nesciunt voluptatum
@@ -242,20 +306,20 @@
 
 
                         <div class="img1">
-                            <img src="/assets//img/home3/img1.png"
+                            <img src="/assets/img/home/img1.png"
                                 alt="OPPORTUNITY TO EXPERIMENT WITH LEADING COMPANIES" />
                             <img id="img1Dots" src="/assets/img/home3/img1Dots.png" alt="" />
                             <p>OPPORTUNITY TO EXPERIMENT WITH LEADING COMPANIES</p>
                         </div>
 
                         <div class="img1">
-                            <img src="/assets//img/home3/img2.png" alt="CAREER OPPORTUNITIES FOR DUAL VET GRADUATES" />
+                            <img src="/assets/img/home/img2.png" alt="CAREER OPPORTUNITIES FOR DUAL VET GRADUATES" />
                             <img id="img1Dots" src="/assets/img/home3/img1Dots.png" alt="" />
                             <p>CAREER OPPORTUNITIES FOR DUAL VET GRADUATES</p>
                         </div>
 
                         <div class="img1">
-                            <img src="/assets//img/home3/img3.png"
+                            <img src="/assets/img/home/img3.png"
                                 alt="CHANCES FOR STUDENTS WHO CANNOT AFFORD EDUCATION" />
                             <img id="img1Dots" src="/assets/img/home3/img1Dots.png" alt="" />
                             <p>CHANCES FOR STUDENTS WHO CANNOT AFFORD EDUCATION</p>
@@ -453,6 +517,16 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
         integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 </body>
 

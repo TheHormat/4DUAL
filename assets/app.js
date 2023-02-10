@@ -53,8 +53,8 @@ const swiper = new Swiper(".swiper", {
 
 
 // News Text Truncate
-let maxCharac = 110;
-let contents = document.querySelectorAll(".content");
+let maxCharac = 70;
+let contents = document.querySelectorAll("#maxContent");
 
 contents.forEach(content => {
   if(content.textContent.length < maxCharac) {

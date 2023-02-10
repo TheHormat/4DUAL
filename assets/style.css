@@ -1360,64 +1360,6 @@ button:hover {
   align-items: flex-end;
 }
 
-@media only screen and (max-width: 650px) {
-  .carousel {
-    margin-top: 120px;
-  }
-
-  .carousel_text1 {
-    font-size: 13px;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1434,18 +1376,35 @@ button:hover {
   clear: both;
 }
 
-.right-column h3 {
-  color: blue;
-  font-weight: bold;
+.left-column .card i{
+  font-size: 24px;
+  float: right;
+}
+
+
+.left-column .card img {
+  width: 100%;
+  height: 500px;
+  cursor: pointer;
 }
 
 .left-column {
   float: left;
   width: 75%;
+  font-family: 'Arial';
+}
+
+.left-column h3 {
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .left-column .card {
   border: none;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  -webkit-transition: color 0.2s ease-out;
 }
 
 .right-column {
@@ -1454,46 +1413,53 @@ button:hover {
   padding-left: 20px;
   background-color: #fff;
   border: none;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+  font-family: 'Arial';
+}
 
+.right-column:hover {
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.right-column h5 {
+  color: #082F8D;
+  margin-bottom: 15px;
+  font-weight: 600;
+  cursor: pointer;
+
+}
+
+.right-column .card p {
+  font-weight: bold;
 }
 
 .right-column .card {
   border: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(224, 221, 221);
+  background-color: #ffffff;
+  margin-top: 10px;
+  padding: 10px;
+  cursor: pointer;
+  -webkit-transition: color 0.2s ease-out;
 }
 
 .right-column .card:last-child {
   border-bottom: none;
 }
 
-.card {
-  padding: 20px;
-  background-color: #ffffff;
-  cursor: pointer;
-}
-
 .card:hover {
-  color: blue;
-  transition: 1s;
+  transition: 0.5s;
+  color: #082F8D;
 }
 
-.card img {
-  width: 100%;
-  height: 600px;
+.right-column .card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
 }
 
-.right-column .card img {
-  margin-bottom: 10px;
-}
-
-
-/*responsive */
-
-@media(max-width:800px) {
-
-  .left-column,
-  .right-column {
-    width: 100%;
-    padding: 0px;
-  }
+.right-column .card-head h6 {
+  margin-bottom: 13px;
 }

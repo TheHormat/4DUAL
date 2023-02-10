@@ -1860,3 +1860,56 @@
 /* -----Mobile S 320px ----- */
 
 @media screen and (max-width: 320px) {}
+
+
+
+/*responsive */
+@media(max-width:800px) {
+
+  .left-column,
+  .right-column {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .card:hover {
+    transition: 0.5s;
+    color: #082F8D;
+  }
+
+  .left-column .card img {
+    width: 100%;
+    height: 300px;
+    cursor: pointer;
+  }
+
+  .row {
+    margin: 0.5px;
+
+  }
+
+  .right-column{
+    margin-top: 20px;
+  }
+
+  .right-column .card-head {
+    display: flex;
+    justify-content: space-between;
+    margin: none;
+  }
+
+  .right-column h5{
+    margin-bottom: 10px;
+  }
+}
+
+
+@media only screen and (max-width: 650px) {
+  .carousel {
+    margin-top: 120px;
+  }
+
+  .carousel_text1 {
+    font-size: 13px;
+  }
+}
