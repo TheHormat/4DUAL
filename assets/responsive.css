@@ -1865,6 +1865,14 @@
 
 /*responsive */
 @media(max-width:800px) {
+  .deneme h3{
+    font-size: 14px;
+  }
+
+  .deneme h3 img {
+    width: 8px;
+    height: 8px;
+  }
 
   .left-column,
   .right-column {

@@ -1361,7 +1361,15 @@ button:hover {
 }
 
 
+.deneme {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
 
+.deneme img {
+  margin-bottom: 5px;
+}
 
 
 
@@ -1391,7 +1399,7 @@ button:hover {
 .left-column {
   float: left;
   width: 75%;
-  font-family: 'Arial';
+  font-family: "'pt_sans',sans-serif" !important;
 }
 
 .left-column h3 {
@@ -1415,7 +1423,7 @@ button:hover {
   border: none;
   border-radius: 5px;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
-  font-family: 'Arial';
+  font-family: "'pt_sans',sans-serif" !important;
 }
 
 .right-column:hover {
