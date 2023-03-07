@@ -392,6 +392,11 @@
     font-size: 27px !important;
   }
 
+  .carousel__header h3{
+    font-size: 14px;
+    text-align: center;
+  }
+
   /* Navbar */
   .navbar {
     border-radius: 0px 0px 30px 30px;
@@ -1010,6 +1015,11 @@
 @media screen and (max-width: 425px) {
   h1 {
     font-size: 22px !important;
+  }
+
+  .carousel__header h3{
+    font-size: 12px;
+    text-align: center;
   }
 
   /* Navbar */
@@ -1775,6 +1785,12 @@
 /* -----Mobile M 375px ----- */
 
 @media screen and (max-width: 375px) {
+
+  .carousel__header h3 {
+    font-size: 12px;
+    text-align: center;
+  }
+
   h1 {
     font-size: 20px !important;
   }
@@ -1865,7 +1881,7 @@
 
 /*responsive */
 @media(max-width:800px) {
-  .deneme h3{
+  .deneme h3 {
     font-size: 14px;
   }
 
@@ -1896,7 +1912,7 @@
 
   }
 
-  .right-column{
+  .right-column {
     margin-top: 20px;
   }
 
@@ -1906,7 +1922,7 @@
     margin: none;
   }
 
-  .right-column h5{
+  .right-column h5 {
     margin-bottom: 10px;
   }
 }

@@ -1361,13 +1361,20 @@ button:hover {
 }
 
 
-.deneme {
+.carousel__header {
   display: flex;
   justify-content:space-between;
   align-items: center;
 }
 
-.deneme img {
+.carousel__header img:nth-child(1) {
+  float: left;
+}
+.carousel__header img:nth-child(2) {
+  float: right;
+}
+
+.carousel__header img {
   margin-bottom: 5px;
 }
 
