@@ -1306,6 +1306,10 @@ button:hover {
   margin-top: 120px;
 }
 
+.carousel img{
+  object-fit: cover;
+}
+
 .carousel-item {
   transition: transform 2s ease opacity .5s ease-out;
 }
@@ -1376,6 +1380,7 @@ button:hover {
 
 .carousel__header img {
   margin-bottom: 5px;
+
 }
 
 
